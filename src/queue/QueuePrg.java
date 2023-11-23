@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 public class QueuePrg {
 	public static void main(String[] args) {
-		Queue<Integer> queue=new LinkedList<Integer>();
+		/*Queue<Integer> queue=new LinkedList<Integer>();
 		queue.offer(10);
 		queue.offer(20);
 		queue.offer(30);
@@ -17,7 +17,20 @@ public class QueuePrg {
 		System.out.println("Contains values?: "+queue.containsAll(queue));
 		System.out.println("Contains 21? : "+queue.contains(21));
 		System.out.println("size: "+queue.size());
-		System.out.println(""+queue.);
+		//System.out.println(""+queue.);*/
+		queueSingleLinkedList<String> q=new queueSingleLinkedList<String>();
+		q.offer("Hari");
+		q.offer("Priya");
+		q.offer("Jade");
+		q.offer("Arul");
+		System.out.println("Size: "+q.getSize());
+		q.display();
+		q.poll();
+		System.out.println("Size: "+q.getSize());
+		q.display();
+		q.peek();
+		System.out.println("Size: "+q.getSize());
+		q.display();
 	}
 
 }
