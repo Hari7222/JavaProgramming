@@ -13,13 +13,14 @@ public class Main {
 	 n.Left.Right.Left=new TreeNode<Integer>(39);
 	 n.Left.Right.Right=new TreeNode<Integer>(32);
 	 Traversal traversa=new Traversal(n);
-	 System.out.println("Inorder");
+	 /*System.out.println("Inorder");
 	 traversa.inOrder();
 	 System.out.println("-----------");
 	 System.out.println("Preorder");
 	 traversa.preOrder();
 	 System.out.println("Postorder");
-	 traversa.postOrder();
+	 traversa.postOrder();*/
+	 System.out.println("Diameter: "+traversa.diameter(n));
 	 
 	
 	}

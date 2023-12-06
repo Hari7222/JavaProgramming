@@ -17,7 +17,9 @@ public class TreeTraversal {
 		}
 		else {
 			int leftHeight=height(currentRoot.Left);
+			//System.out.println("Left"+leftHeight);
 			int rightHeight=height(currentRoot.Right);
+			//System.out.println("right"+rightHeight);
 			if(leftHeight>rightHeight) {
 				return leftHeight+1;
 			}
@@ -26,6 +28,23 @@ public class TreeTraversal {
 			}
 		}
 		}
+	public int dia(TreeNode<Integer> currentRoot) {
+		if(currentRoot==null) {
+			return 0;
+		}
+		else {
+			int leftHeight=height(currentRoot.Left);
+			int rightHeight=height(currentRoot.Right);
+			
+			int leftDia=dia(currentRoot.Left);
+			System.out.println(currentRoot.data+" Left dia:"+leftDia+" Left height:"+leftHeight);
+			int rightDia=dia(currentRoot.Right);
+			System.out.println(currentRoot.data+" Right dia:"+rightDia+" Right height:"+rightHeight);
+			
+			return Math.max((leftHeight+rightHeight+1),Math.max(leftDia, rightDia));
+		}
+	}
+	
 	public TreeNode<Integer> mirror(TreeNode<Integer> currentRoot){
 		if(currentRoot==null) {
 			return currentRoot;

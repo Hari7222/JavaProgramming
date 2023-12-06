@@ -5,7 +5,7 @@ public class Traversal {
 	public Traversal(TreeNode<Integer> root) {
 		this.n=root;
 	}
-	public void inOrder() {
+	/*public void inOrder() {
 		inOrder(n);
 	}
 	
@@ -36,8 +36,17 @@ public class Traversal {
 			preOrder(currentRoot.getRight());
 			System.out.println(currentRoot.getData());
 		}
-	}
-	
-	
+	}*/
+	public int diameter(TreeNode<Integer> currentRoot) {
+		if(currentRoot==null) {
+			return 0;
+		}
+		else {
+			int left=diameter(currentRoot.Left);
+			int right=diameter(currentRoot.Right);
+			return left+right;
+		}
+		
 
+}
 }
