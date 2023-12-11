@@ -10,7 +10,7 @@ public class TreeExmple {
 		 n.Left.Left=new TreeNode<Integer>(17);
 		 n.Left.Right=new TreeNode<Integer>(19);
 		 n.Right.Left=new TreeNode<Integer>(8);
-		 n.Right.Right=new TreeNode<Integer>(7);
+		 n.Right.Right=new TreeNode<Integer>(77);
 		 n.Left.Left.Left=new TreeNode<Integer>(12);
 		 n.Left.Left.Right=new TreeNode<Integer>(31);
 		 n.Left.Right.Left=new TreeNode<Integer>(39);

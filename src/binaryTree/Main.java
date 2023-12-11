@@ -12,7 +12,7 @@ public class Main {
 	 n.Left.Left.Right=new TreeNode<Integer>(31);
 	 n.Left.Right.Left=new TreeNode<Integer>(39);
 	 n.Left.Right.Right=new TreeNode<Integer>(32);
-	 Traversal traversa=new Traversal(n);
+	 Traversal traversa=new Traversal();
 	 /*System.out.println("Inorder");
 	 traversa.inOrder();
 	 System.out.println("-----------");
